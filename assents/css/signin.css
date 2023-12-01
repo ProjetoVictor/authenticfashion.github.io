@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.fullheight {
+	height: 100vh;
+	background-image: url("../../img/fundos/fundo4.png");
+	background-attachment: fixed;
+	background-size: cover;
+  }
+  @media screen and (max-width: 1500px) {
+	.header.fullheight {
+	  background-image: url("../../img/fundos/fundo2.png");
+	}
+  }
+  @media screen and (max-width: 1000px) {
+	.header.fullheight {
+	  background-image: url("../../img/fundos/fundo2.png");
+	}
+  }
+  @media screen and (max-width: 800px) {
+	.header.fullheight {
+	  background-image: url("../../img/fundos/fundo2.png");
+	}
+  }
+  @media screen and (max-width: 600px) {
+	.header.fullheight {
+	  background-image: url("../../img/fundos/fundo2.png");
+	}
+  }
+  @media screen and (max-width: 400px) {
+	.header.fullheight {
+	  background-image: url("../../img/fundos/fundo2.png");
+	}
+  }
+  @media screen and (max-width: 320px) {
+	}
+  
+
+.fundoselect{
+  background-image:url("../img/fundoselect.png");
+  background-color: #ffefe1;
+  position: relative;
+}
+body {
+  background-image: url("../images/bg-signin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+
+
+.card {
+  background-color:  #ffc6ac;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  margin-top: 80px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #ffbc90;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+.logimg{
+  width: 70px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #ffbc90;
+}
+
+.label-float label{
+  color: #000000;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #5e2500;
+}
+
+button{
+  background-color: transparent;
+  border-color: #000000;
+  color: #000000;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color:  #f7ccb4;
+  color: rgb(0, 0, 0);
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p{
+  color: #000000;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: #ff8b48;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: #000000;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000;
+}
+
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+@media (max-width: 790px) {
+   .fundo{
+    display: block;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    background-color: #ffbbbb;
+   }
+  
+}

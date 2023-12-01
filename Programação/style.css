@@ -1,0 +1,686 @@
+
+.fundo{
+    background-image: url('/img/bemvindo.png');
+	background-repeat: no-repeat;
+    background-size:100%;
+	background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+body h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.5cm;
+}
+body h5{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.5cm;
+}
+.cards {   
+	display: flex; 
+	flex-direction: column;  
+	align-items: center;  
+	justify-content: center; 
+    height: 80vh;
+
+} 
+.btn .bemvindobot {
+	  margin-top: 20px; 
+	  margin-right: 20px;
+} 
+.btn .bemvindosair {   
+	margin-top: 40px;
+}
+
+.fundo1{
+    background-color: #ffefe1;
+	position: relative;
+}
+
+.fullheight {
+	height: 100vh;
+	background-image: url("/img/fundos/fundo3.png");
+	background-attachment: fixed;
+	background-size: cover;
+  }
+  @media screen and (max-width: 1500px) {
+	.header.fullheight {
+	  background-image: url("/img/fundos/fundo3.png");
+	}
+  }
+  @media screen and (max-width: 1000px) {
+	.header.fullheight {
+	  background-image: url("/img/fundos/fundo3.png");
+	}
+
+  }
+  @media screen and (max-width: 800px) {
+	.header.fullheight {
+	  background-image: url("/img/fundos/fundo3.png");
+	}
+	
+  }
+  @media screen and (max-width: 600px) {
+	.header.fullheight {
+	  background-image: url("/img/fundos/fundo3.png");
+	}
+  }
+  @media screen and (max-width: 400px) {
+	.header.fullheight {
+	  background-image: url("/img/fundos/fundo3.png");
+	}
+  }
+  @media screen and (max-width: 320px) {
+	.fullheight {
+	  background-image: url("/img/fundos/fundo3.png");
+	}
+  }
+
+
+
+.subir{
+	background-color:  #FA986D; 
+	border-color:  #FA986D;
+}
+.container1{
+	margin-top: 60px;
+	background-color: #f7f7f7f1;
+	width: 100%;
+	height: 800px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mfooter{
+	background-color: #FFD8C2;
+	height: auto;
+	max-width: 100%;
+	padding-top: 40px;
+	color: #000000;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h1{
+   font-size: 2rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+   font-family: 'Playfair Display', serif;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials li{
+	margin: 0 10px;
+}
+.footer-bottom{
+	background-color: #000000;
+	padding: 20px 0;
+	text-align: center;
+}
+.socials a{
+	margin-left: 30px;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4 ;
+	font-weight: 200;
+}
+
+.titnav{
+	font-family: 'Playfair Display', serif;
+    font-variant: normal;
+	position: relative;
+}
+.titnav1{
+	font-family: 'Playfair Display', serif;
+    font-variant: normal;
+	text-align: center;
+	position: relative;
+}
+.card{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 6px #0000001c;
+}
+.card1{
+	align-items: center;
+	margin-top: 70px;
+    max-width: 1500px;
+    height: 600px;
+	background-color: #fff9f9fb;	
+}
+.pesquisa{
+    background-image: url('/img/img3.png');
+    padding: 2.3%;
+    margin-top: 40px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
+.sac{
+    background-image: url('img/img3.jpg');
+    padding:1.5%;
+    margin-top: 1.1%;
+}
+
+.margem{
+    margin-top: 9%;
+}
+
+a:link {
+	color: #402D22;
+ 	text-decoration: none;
+  	display: inline-block;
+  	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+}
+
+/* visited link */
+a:visited {
+  color: #000000;
+}
+
+ /*mouse over link*/ 
+a:hover {
+  color: #4F4F4F;
+}
+
+/* selected link */
+a:active {
+  	color: rgb(255, 192, 121);
+}
+
+.cor{
+	color: #000000;
+}
+
+.back{
+  background-image: url('img/Design\ sem\ nome.jpg');
+  border-radius: 10px;
+  margin-left: 25%;
+  width: 500px;
+  border: #000000 solid 1px;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+	background-color: #ffefe1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	line-height: 1;		
+}
+
+.fixo{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1040;
+}
+
+.imgtam{
+	width: 200px;
+	height: 184px;
+	/*margin-left: 20px;*/
+	border: #000000 double;
+}
+
+/*.imgsobre{
+	width: 85%;
+	height: 85%;
+	transition: width 1s, height 1s, transform 1s;
+	text-align: center;
+}*/
+
+/*.imgsobre:hover {
+	width: 100%;
+	height: 100%;
+   
+}*/
+
+.redonda{
+  border: 1.em #000000 ;
+  border-radius: 50%;
+}
+
+.fonte{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+}
+
+.margembaixo{
+	margin-bottom: 3%;
+}
+
+.fundcadast{
+	background-color: #FFFCFC;
+	padding: 2%;
+	border-radius: 5%;
+}
+
+.fundodoforms{
+	background-color: #ffdac6;
+}
+
+.logimg{
+	margin-left: 41%;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	position: relative;
+	
+}
+
+.corlog{
+	background-color: #DDB29A;
+}
+
+.volume{
+	padding: 1%;
+}
+
+.bordalog{
+	border: #FFFBFB solid;
+	border-radius: 10px;
+}
+
+.centralizar{
+	margin-top: 15px;
+	text-align: center;
+	width: 25px;
+
+}
+
+.finpag{
+  background-image: url('img/img3cl.jpg');
+  margin-left: 43%;
+  margin-right: 50%;
+  border-radius: 10px;
+  border: #000000 solid 1px;
+}
+
+.arumar{
+	border-radius: 10px;
+	border-color: #A9A9A9;
+}
+
+.imgpag{
+	width: 50px;
+}
+
+.bordsacolabot{
+	border-bottom: 2px solid;
+}
+
+.bordsacolalef{
+	border-left: 2px solid;
+}
+
+.bordsacolacima{
+	border-top: 2px solid;
+}
+
+.borddireita{
+	border-right: 2px solid;
+}
+
+.margsacola{
+	width: 40px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.imgfloat{
+	width: 60px;
+	float: left;
+	margin-right: 1%; 
+	text-align: center;
+}	
+
+.marginsacolatitulo{
+	margin-left: 35%;
+}
+
+
+.btn-light{
+	border-radius: 27%;
+    width: 70px;
+}
+.cima{
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #ffa977;
+	border-radius: 5px;
+	border-color: rgba(255, 255, 255, 0.15);
+	text-align: center;
+  }
+
+.sacola-comp{
+	background-color: #FFFBFB;
+	margin-top: 8%;
+	padding: 4%;
+	border-radius: 30px;
+	margin-bottom: 20px;
+}
+
+.cart-product-price{
+	margin-left: 50px;
+}
+
+.table-head-item{
+	margin-left: 50%;
+}
+
+.product-qtd-input{
+	margin-left: 256px;
+	margin-right: 256px;
+}
+
+.sacolacom2{
+	background-color: #fffbfbeb;
+	padding: 4%;
+	border-radius: 30px;
+	margin-bottom: 100px;
+}
+
+.precosaco{
+	margin-left: 775px;
+}
+
+.purchase-button{
+	background-color: #FF5E00;
+	border-color: #FF5E00;
+	border-radius: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+}
+
+.remove-product-button{
+	background-color: #FF5E00;
+	border-color: #FF5E00;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+}
+
+.valor{
+	margin-left: 5px;
+	background-color: #FFFFFF;
+	border-radius: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-right: 5px;
+}
+
+.product-qtd-input{
+	border-radius: 22px;
+}
+
+.fundcont{
+	background-color: #FFFFFF;
+	padding: 30px;
+    margin-left: 40px;
+	border-radius: 10px;
+	position: relative;
+	
+}
+
+.fundodoformsent{
+	background-color: #DDB29A;
+}
+
+.arrebut2{
+	border-radius: 100%;
+	background-color: #EF9968;
+	position: fixed;
+	padding-right: 10%;
+	padding-left: 10%;
+	margin-left: 83%;
+}
+
+.arrebut4{
+	border-radius: 100%;
+	background-color: #EF9968;
+	padding-right: 6%;
+	padding-left: 7%;
+	margin-left: 65%;
+}
+
+.arrebutmais{
+	border-radius: 100%;
+	background-color: #EF9968;
+	padding-right: 6%;
+	padding-left: 6%;
+	margin-left: 55%;
+}
+
+.fundadi{
+	background-color: #FF5E00;
+	color: #f2e4dc;
+}
+
+.back{
+	background-image: url('img/Design\ sem\ nome.jpg');
+	border-radius: 10px;
+	margin-top: 13%;
+	width: 300px;
+	border: #000000 solid 1px;
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.favback{
+	background-color: #f2e4dc;
+	width: 1863px;
+	margin-right: 9000px;
+	
+}
+
+.teste{
+	background-color: #ffdac4;
+	width: 400px;
+	border:#ffdac4 solid 1px;
+	font-weight: bolder;
+
+}
+
+
+.bemvindo{
+	text-align: center;
+}
+
+.bemvindoimg{
+	margin-top: 50px;
+}
+
+.bemvindobot{
+	background-color: #ffa977;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: x-large;
+}
+
+.bemvindosair{
+	background-color: #ffa977;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 70px;
+	border-color: #ffa977;
+	margin-bottom: 40px;
+}
+
+.abaixar{
+	margin-top: 70px;
+}
+
+.abaixrcont{
+	margin-top: 70px;
+}
+
+.botfinal{
+	padding:20px 30px;
+    border-radius:20px;
+    background-color:#48d05f;
+    color:#FFF;
+    cursor:pointer;
+    text-align:center;
+    margin-top:20px;
+    border:2px solid #63f77c;
+    transition: all ease .2s;
+	margin-left: 120px;
+}
+
+.animals{
+	width: 60%;
+}
+
+.imgadd{
+	width: 500px;
+	height: 600px;
+}
+
+.texto{
+	align-items: center;
+}
+
+.container-centered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: -85px;
+}
+#container {
+    width: 400px;
+    height: 400px;
+    background-image: url('/img/bemvindo.png');
+}
+.cim{
+	margin-top: 250px;
+}
+
+.fundad{
+	background-color: #ffd3b0;
+	padding: 30px;
+	border-radius: 30px;
+}
+
+.butad{
+	align-items: center;
+	
+	background-color: #EF9968;
+	font-weight: bold;
+	font-size: medium;
+	padding: 10px;
+	border-radius: 30px;
+	margin-left: 130px;
+}
+
+#item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+	margin-left: 30px;
+}
+
+.item {
+    transition: transform 0.3s;
+
+}
+
+/* Estilo para esconder os itens não correspondentes */
+.item.hidden {
+    display: none;
+}
+
+/* Estilo para mover os itens correspondentes para a esquerda */
+.item.visible {
+    transform: translateX(-50px);
+	width: 450px;
+	justify-content: center;
+	align-items: center;
+}
+
+.arruroupa{
+	height: 150px;
+	margin-top: 4px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    max-width: 600cm;
+    margin: 0 auto;
+}
+
+.chat-item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 180px; /* Largura máxima para cada mensagem */
+}
+
+
+.chat-text {
+    margin-top: 5px;
+}
+
+.arumandocarimg{
+	width: 240px;
+}
+
+.espacimg{
+	margin-right: 101px;
+}
+
+@media screen and (max-width: 800px) {
+	.section.arumandocarimg {
+		width: 540px;
+	}
+	
+	
+  }
+  
+  body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+
+
+
+
+  

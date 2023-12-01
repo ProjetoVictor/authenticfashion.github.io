@@ -1,0 +1,165 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="navcss.css">
+    <link rel="stylesheet" href="ADD.css">
+    <link rel="icon" type="image/x-icon" href="../img/img13.png">
+    <title>Comprar</title>
+    
+</head>
+<header class="fixo">
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#">Authentic fashion</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Authentic fashion</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="assents/html/selectparacadastro.html">Cadastro</a></li>
+                    <li><a href="assents/html/entrar.html">Entrar</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+        
+                </div>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                    </div>
+                    <div class="search-field">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<body class="">
+    <div class="container-centered">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1> Produtos</h1>
+                    </div>
+                    <div id="msgError">
+
+                    </div>
+                    <div id="msgSuccess">
+                      
+                    </div>
+                    <div class="login-button"> 
+                        <button type="button" onclick="addProduct()">Add+</button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Nome do Produto:</label>
+                        <input type="text" class="arumar" id="name" required />        
+                    </div>
+                    <div class="input-box">
+                        <label for="tamanho">Tamanho:</label>
+                        <input type="text" class="arumar" id="tamanho" required />     
+                    </div>
+                    <div class="input-box">   
+                        <label for="text">Texto do Produto:</label>
+                        <input type="text" id="text" placeholder=" "rows="3" required />        
+                    </div>
+                    <div class="input-box">
+                        <label for="price">Preço:</label>
+                        <input type="number" class="arumar" id="price" step="0.01" required><br><br>
+                     </div>
+                     <div class="input-box">
+                        <label for="name">Criador:</label>
+                        <input type="text" class="arumar" id="name" required><br><br>
+                     </div>
+            
+                     <div class="login-button">
+                        <label for="image">Imagem:</label>
+                        <br>
+                        <input type="file"id="image" accept="image/*" required><br><br>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+ </div>
+  <script>
+function addProduct() {
+    const imageInput = document.getElementById("image");
+    const nameInput = document.getElementById("name");
+    const priceInput = document.getElementById("price");
+    const textInput = document.getElementById("text");
+
+    const image = imageInput.files[0];
+    const name = nameInput.value;
+    const price = parseFloat(priceInput.value);
+    const text = textInput.value;
+
+    if (!image || !name || isNaN(price) || !text) {
+        alert("Por favor, preencha todos os campos corretamente.");
+        return;
+    }
+
+    // Gerar um ID único para cada roupa
+    const productId = Date.now().toString();
+
+    // Ler a imagem como uma string Base64
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+        const base64Image = event.target.result;
+
+        // Crie um objeto de produto com o ID único, imagem Base64 e o texto
+        const product = {
+            id: productId,
+            image: base64Image,
+            name: name,
+            price: price.toFixed(2),
+            text: text
+        };
+
+        // Verifique se já existem produtos no Local Storage
+        let products = JSON.parse(localStorage.getItem("products")) || [];
+
+        // Adicione o novo produto à lista de produtos
+        products.push(product);
+
+        // Armazene a lista de produtos atualizada no Local Storage
+        localStorage.setItem("products", JSON.stringify(products));
+
+        // Limpar campos após a adição
+        imageInput.value = "";
+        nameInput.value = "";
+        priceInput.value = "";
+        textInput.value = "";
+    };
+
+    // Lê a imagem como uma string Base64
+    reader.readAsDataURL(image);
+}
+
+
+  </script>
+</body>
+
+<script src="sacola.js"></script>
+<script src="navjs.js"></script>
+
+</html>
